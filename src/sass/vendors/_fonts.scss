@@ -1,0 +1,61 @@
+/*в данном проекте все шрифты без засечек*/
+
+/*пример подключения*/
+
+/*
+        font-family: DMSans, "Arial", sans-serif;
+        
+*/
+
+
+/* DMSans  400 */
+@font-face{
+    font-family: DMSans;
+    font-display: swap;
+    font-style: normal;
+	font-weight: 400;
+    src: local('DMSans'),
+         url('.././fonts/DMSans-400.ttf')  format('ttf'),
+         url('.././fonts/DMSans-400.woff2') format('woff2'), 
+		 url('.././fonts/DMSans-400.woff') format('woff');
+
+}
+
+/* DMSans  500 */
+@font-face{
+    font-family: DMSans;
+    font-display: swap;
+    font-style: normal;
+	font-weight: 500;
+    src: local('DMSans'),
+         url('.././fonts/DMSans-500.ttf')  format('ttf'),
+         url('.././fonts/DMSans-500.woff2') format('woff2'), 
+		 url('.././fonts/DMSans-500.woff') format('woff');
+
+}
+
+/* DMSans  700 */
+@font-face{
+    font-family: DMSans;
+    font-display: swap;
+    font-style: normal;
+	font-weight: 700;
+    src: local('DMSans'),
+         url('.././fonts/DMSans-700.ttf')  format('ttf'),
+         url('.././fonts/DMSans-700.woff2') format('woff2'), 
+		 url('.././fonts/DMSans-700.woff') format('woff');
+
+}
+
+/* TitanOne  400 */
+@font-face{
+    font-family: TitanOne;
+    font-style: normal;
+    font-display: swap;
+	font-weight: 400;
+    src: local('TitanOne'),
+         url('.././fonts/TitanOne.ttf')  format('ttf'),
+         url('.././fonts/TitanOne-Regular.woff2') format('woff2'), 
+		 url('.././fonts/TitanOne.woff') format('woff');
+
+}
