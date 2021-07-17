@@ -22,7 +22,14 @@ margin-right: 30px;}
 }
 
 .advantages-list-item{
-    flex-basis: calc(100%/3 - 60px);
+    width: 290px;
+
+    @media screen and(min-width:768px) {
+        flex-basis: calc(100%/3 - 80px);
+    }
+    @media screen and(min-width:1200px) {
+        flex-basis: calc(100%/3 - 60px);
+    }
     
     &:not(:last-child){
         padding-bottom: 38px;}
@@ -46,6 +53,7 @@ margin-right: 30px;}
     color: $main-titles-txt;
 
     padding-bottom: 21px;
+
 &.icon1{
     &::before{
         content: '';
@@ -127,6 +135,8 @@ margin-right: 30px;}
     font-weight: 700;
     font-size: 12px;
     line-height: 1.667;
+    word-wrap: break-word;
+
   @media screen and(min-width:768px) {
     font-size: 14px;
     line-height: 1.714;
