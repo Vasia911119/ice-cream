@@ -162,7 +162,7 @@ img {
 }
 
 .about__button {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 
   display: flex;
@@ -192,53 +192,36 @@ img {
   margin-left: 10px;
 }
 
-// .hidden,
-// .hidden-text {
-//   display: none;
-// }
+.hidden {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.hidden-text {
+  display: none;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.58em;
+}
 
-// .hidden-label,
-// .hidden:checked .hidden-label {
+// .hidden-label {
+//   border-bottom: 1px dotted green;
 //   padding: 0;
 //   color: green;
 //   cursor: pointer;
-//   border-bottom: 1px dotted green;
-// }
-// .hidden:checked .hidden-label {
-//   color: red;
-//   border-bottom: 0;
+//   display: inline-block;
 // }
 
-// .hidden:checked .hidden-text {
-//   display: block;
-//   background-color: #382b2e;
+// .hidden:checked + .hidden-label {
+//   color: blue;
+//   background-color: green;
 // }
-
-.hide {
-  display: none;
-}
-.hide + label ~ div {
-  display: none;
-}
-/* оформляем текст label */
-.hide + label {
-  border-bottom: 1px dotted green;
-  padding: 0;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-}
-/* вид текста label при активном переключателе */
-.hide:checked + label {
-  color: red;
-  border-bottom: 0;
-}
 /* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked + label + div {
+.hidden:checked + .hidden-label + .hidden-text {
   display: block;
   background: #efefef;
-  -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-  -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-  box-shadow: inset 3px 3px 10px #7d8e8f;
+  box-shadow: inset 3px 3px 10px #2e49b6;
+  box-shadow: inset 3px 3px 10px #2e49b6;
+  box-shadow: inset 3px 3px 10px #2e49b6;
   padding: 10px;
 }
