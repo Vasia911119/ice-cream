@@ -11,7 +11,12 @@
     @media screen and(min-width:768px) {
     display:inline-flex;
     justify-content: space-between;
+
+    padding-bottom: 246px;
     
+    }
+    @media screen and(min-width:1200px){
+        padding-bottom: 310px;
     }
 }
 
@@ -26,6 +31,16 @@
     font-family: TitanOne, "Arial", monospace;
     font-size: 36px;
     line-height: 1.139;
+    letter-spacing: 0.04em;
+    @media screen and(min-width:768px) {
+        font-size: 48px;
+    line-height: 1.146;
+    }
+
+    @media screen and(min-width:1200px) {
+        font-size: 58px;
+    line-height: 1.138;
+    }
     color: $main-titles-txt;
 
     padding-bottom: 21px;
@@ -35,7 +50,12 @@
         display: block;
         height: 50px;
         margin-bottom: 25px;
-
+        @media screen and(min-width:768px) {
+            margin-bottom: 45px;
+        }
+        @media screen and(min-width:1200px) {
+            margin-bottom: 54px;
+        }
         background-image: url(../images/icons/icon1.png);
         @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -55,7 +75,12 @@
         display: block;
         height: 50px;
         margin-bottom: 25px;
-
+        @media screen and(min-width:768px) {
+            margin-bottom: 45px;
+        }
+        @media screen and(min-width:1200px) {
+            margin-bottom: 54px;
+        }
         background-image: url(../images/icons/icon2.png);
         @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -75,7 +100,12 @@
         display: block;
         height: 50px;
         margin-bottom: 25px;
-
+        @media screen and(min-width:768px) {
+            margin-bottom: 45px;
+        }
+        @media screen and(min-width:1200px) {
+            margin-bottom: 54px;
+        }
         background-image: url(../images/icons/icon3.png);
         @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -95,5 +125,12 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.667;
-
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
