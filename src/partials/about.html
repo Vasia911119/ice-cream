@@ -5,13 +5,16 @@
         <div class="position__tablet">
             <div class="thumb">
                 <picture>
-                    <source srcset="./images/cow-pic-desktop.png 1x, ./images/cow-pic-desktop@2x.png 2x "
-                        media="(min-width: 1200px)" type="image/png" />
-                    <source srcset="./images/cow-pic-tablet.png 1x, ./images/cow-pic-tablet@2x.png 2x " media="(min-width: 1200px)"
-                        media="(min-width: 768px)" type="image/png" />
+                    <source srcset="./images/cow-pic-desktop.png 1x, ./images/cow-pic-desktop2x.png 2x "
+                        media="(min-width: 1200px)"
+                         />
+                    <source srcset="./images/cow-pic-tablet.png 1x, ./images/cow-pic-tablet2x.png 2x " 
+                    media="(min-width: 768px)"
+                         />
             
-                    <source srcset="./images/cow-pic-mobile.png 1x, ./images/cow-pic-mobile@2x.png 2x " media="(min-width: 1200px)"
-                        media="(max-width: 768px)" type="image/png" />
+                    <source srcset="./images/cow-pic-mobile.png 1x, ./images/cow-pic-mobile2x.png 2x " 
+                    media="(min-width: 480px)"
+                        />
                     <img src="./images/cow-pic-desktop.png" alt="Cow">
                 </picture>
             </div>
@@ -28,15 +31,38 @@
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
                     Aliquam erat volutpat. Aenean accumsan.</p>
                 <button class="about__button" type="button">Read more
-                    <svg class="about-button__icon" width="8" height="10">
-                        <use href="./images/more-sign-button-about.svg"></use>
+                    <svg class="about-button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.61633 1L6.04401 5L1.61633 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
+                    <!-- <svg class="about-button__icon" width="10" height="10">
+                        <use href="./images/Vector 1.svg"></use>
+                    </svg> -->
                 </button>
+
+                <input type="checkbox" id="hd-1" class="hide" />
+                <label for="hd-1"><button class="about__button" type="button">Read more
+                    <svg class="about-button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.61633 1L6.04401 5L1.61633 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <!-- <svg class="about-button__icon" width="10" height="10">
+                                                        <use href="./images/Vector 1.svg"></use>
+                                                    </svg> -->
+                </button>
+                <div>
+                    HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки
+                    на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для
+                    человека форме..
+                </div>
+            </label>
+
+                
             </div>
         </div>
+             
        
-      
-        
-
     </div>
+
 </section>
