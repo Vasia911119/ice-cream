@@ -1,0 +1,27 @@
+.advantages{
+    background-color:$secondary-bcg;
+    
+}
+
+.advantages-list{
+    /*display:inline-flex;
+    flex-direction: column;
+    */
+    width:100%;
+}
+
+.advantages-list-item{
+    
+    
+     
+}
+
+.advantages-item-title{
+    font-family: TitanOne, "Arial", monospace;
+    font-size: 36px;
+    line-height: 1.139;
+    color: $main-titles-txt;
+
+    padding-top: 9px;
+    padding-bottom: 21px;
+}
