@@ -9,18 +9,22 @@
     padding-bottom: 132px;
   }
 }
-.customer-reviews__container {
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
-}
+// .customer-reviews__container {
+//   @media screen and (max-width: 767px) {
+//     width: 280px;
+//   }
+// }
 .customer-rewiews__blog {
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 620px;
-    margin: 0 auto;
+
     overflow: hidden;
   }
 
