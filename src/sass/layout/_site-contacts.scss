@@ -9,7 +9,6 @@
     @media screen and (min-width: 1280px) {
       margin-top: 234px;
       background-image: url(/images/contacts-bg.png);
-      // background-size: cover;
       background-size: 1280px 382px;
       background-repeat: no-repeat;
 
@@ -22,14 +21,11 @@
     }
   }
 
-
 .card {
   margin-bottom: -84px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    // margin-left: -10px;
-    // margin-right: -10px;
     margin: 0 -10px -78px;
   }
 
@@ -37,9 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-left: -15px;
-    // margin-right: -15px;
-    // margin-bottom: -102px;
     margin: 0 -15px -102px;
   }
 }
@@ -53,7 +46,7 @@
     text-align: left;
     border: 1px solid $vector-line;
     border-radius: 24px;
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 8px 30px 0px #d414431a;
     padding: 43px 21px 43px 20px;
     margin-bottom: 20px;
@@ -70,10 +63,9 @@
       padding: 51px 44px 62px 43px;
       margin: 0 15px 0;
     }
-}
 
-.contacts-items__name,
-.contacts-items__name--green {
+&__name,
+&__name--green {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,13 +94,14 @@
     }
 }
 
-.contacts-items__name--green {
+&__name--green {
     width: 130px;
     background-color: $title-product-second;
 
     @media screen and (min-width: 768px) {
       width: 138px;
     }
+}
 }
 
 .place {
@@ -122,9 +115,8 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 64px;
     }
-}
 
-.place::after {
+&::after {
     position: absolute;
     content: " ";
     bottom: -25px;
@@ -135,7 +127,7 @@
     background-color: $vector-line;
 }
 
-.place__title {
+&__title {
     color: $primary-txt;
     font-size: 12px;
     font-weight: 500;
@@ -157,7 +149,7 @@
     }
 }
 
-.place__text {
+&__text {
     color: $secondary-txt;
     font-size: 12px;
     font-weight: 500;
@@ -174,8 +166,45 @@
       line-height: 1.83;
     }
 }
+}
 
-.work-time__days {
+.work-time {
+    position: relative;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 64px;
+    }
+
+
+&::after {
+    position: absolute;
+    content: " ";
+    bottom: -25px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $vector-line;
+}
+
+&__item:first-child {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
+}
+
+&__days {
     color: $primary-txt;
     font-size: 12px;
     font-weight: 500;
@@ -193,7 +222,7 @@
     }
 }
 
-.work-time__hours {
+&__hours {
     color: $main-paragraf-txt;
     font-size: 12px;
     font-weight: 500;
@@ -210,41 +239,6 @@
       line-height: 1.86;
     }
 }
-
-.work-time {
-    position: relative;
-    margin-bottom: 50px;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 64px;
-    }
-}
-
-.work-time::after {
-    position: absolute;
-    content: " ";
-    bottom: -25px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: $vector-line;
-}
-
-.work-time__item:first-child {
-    margin-bottom: 10px;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 16px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 15px;
-    }
 }
 
 .list-connection__link {
@@ -280,10 +274,10 @@
     @media screen and (min-width: 1280px) {
       margin-top: 86px;
     }
-}
 
-.contacts-button__btn--red,
-.contacts-button__btn--white {
+
+&__btn--red,
+&__btn--white {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +302,7 @@
   }
 }
 
-.contacts-button__btn--white {
+&__btn--white {
     background-color: $infocus-btn;
     color: $autofocus-btn;
     margin-top: 10px;
@@ -319,13 +313,13 @@
     }
 }
 
-.contacts-button__btn--white:hover,
-.contacts-button__btn--white:focus {
+&__btn--white:hover,
+&__btn--white:focus {
   background-color: $focus-second-btn;
 }
 
-.contacts-button__icon--white {
-  stroke: white;
+&__icon--white {
+  stroke: #ffffff;
   margin-left: 8px;
 
   @media screen and (min-width: 768px) {
@@ -333,11 +327,12 @@
   }
 }
 
-.contacts-button__icon--red {
+&__icon--red {
   stroke: $focus-icon-media;
   margin-left: 8px;
 
   @media screen and (min-width: 768px) {
     margin-left: 13px;
   }
+}
 }
