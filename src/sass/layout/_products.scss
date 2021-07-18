@@ -98,6 +98,18 @@
     margin-left: 20px;
     margin-bottom: 20px;
 
+    &.first {
+      background-color: $product-first-bcg;
+    }
+
+    &.second {
+      background-color: $product-second-bcg;
+    }
+
+    &.third {
+      background-color: $product-third-bcg;
+    }
+
     @media screen and (min-width: 768px) {
       padding-top: 152px;
       padding-bottom: 40px;
