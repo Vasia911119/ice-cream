@@ -31,10 +31,10 @@
   position: relative;
   display: flex;
   z-index: 10;
-  transition: 500ms cubic-bezier(0, 1.2, 0.944, 1.06) 0s;
+  transition: 500ms cubic-bezier(0, 1.5, 1, 1.2) 0s;
 
   @media screen and (min-width: 768px) {
-    transition: 600ms cubic-bezier(0, 1.2, 0.944, 1.06) 0s;
+    transition: 600ms cubic-bezier(0, 1.5, 1, 1.2) 0s;
   }
 }
 .customer-reviews__item {
@@ -193,7 +193,7 @@
   position: absolute;
   z-index: 11;
   display: flex;
-  top: 528px;
+  top: 490px;
   left: 86px;
 
   @media screen and (min-width: 768px) {
