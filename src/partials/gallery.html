@@ -1,0 +1,34 @@
+<section class="gallery">
+  <div class="container">
+    <h2 class="gallery-title visually-hidden">Галерея</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/desk_home-pic5_gallery_1x-min.png 1x,
+          ./images/desktop/desk_home-pic5_gallery_2x-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/tabl_home-pic5_gallery_1x-min.png 1x,
+          ./images/tablet/tabl_home-pic5_gallery_2x-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile/mob_home-pic5_gallery_1x-min.png 1x,
+          ./images/mobile/mob_home-pic5_gallery_2x-min.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+
+      <img
+        class="gallery-overley"
+        src="./images/mobile/mob_home-pic5_gallery_1x-min.png"
+        alt="Галерея"
+      />
+    </picture>
+  </div>
+</section>
