@@ -1,26 +1,31 @@
 .container {
   @media screen and (max-width: 479px) {
-    display: block;
-    flex-wrap: wrap;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     // width: 100%;
     width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     // width: 100%;
-    width: 1200px;
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
