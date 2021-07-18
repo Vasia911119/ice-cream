@@ -9,22 +9,29 @@
 }
 
 .card {
+  margin-bottom: -84px;
+
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: -10px;
-    margin-right: -10px;
+    // margin-left: -10px;
+    // margin-right: -10px;
+    margin: 0 -10px -78px;
   }
 
   @media screen and (min-width: 1280px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -15px;
-    margin-right: -15px;
+    // margin-left: -15px;
+    // margin-right: -15px;
+    // margin-bottom: -102px;
+    margin: 0 -15px -102px;
   }
 }
 
 .contacts-items {
+  position: relative;
+  bottom: 84px;
     width: 220px;
     margin-left: auto;
     margin-right: auto;
@@ -37,11 +44,13 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
+      bottom: 78px;
       padding: 50px 32px 50px 31px;
       margin: 0 10px 0;
     }
 
     @media screen and (min-width: 1280px) {
+      bottom: 102px;
       width: 330px;
       padding: 51px 44px 62px 43px;
       margin: 0 15px 0;
@@ -246,11 +255,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 54px 0 113px;
+    margin-top: 54px;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      margin: 81px 0 158px;
+      margin-top: 81px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 86px;
     }
 }
 
