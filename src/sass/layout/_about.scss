@@ -5,6 +5,7 @@
 }
 
 .about__title {
+  font-family: TitanOne, 'Arial', monospace;
   margin-bottom: 15px;
   text-transform: uppercase;
 
@@ -23,6 +24,7 @@
   }
 }
 .about__label {
+  font-family: TitanOne, 'Arial', monospace;
   margin-bottom: 26px;
   text-transform: uppercase;
 
@@ -44,20 +46,17 @@
 }
 
 .thumb {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-right: 17px;
-    width: 516px;
+    min-width: 280px;
   }
   @media screen and (min-width: 768px) {
     margin-right: 17px;
-    width: 340px;
+    min-width: 340px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 74px;
-    width: 280px;
+    width: 516px;
   }
 }
 .position__tablet {
