@@ -2,7 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
+@import './base/fonts';
 @import './vendors/normalize';
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -21,6 +21,7 @@
 @import './layout/gallery';
 @import './layout/products';
 @import './layout/site-footer';
+@import './layout/site-contacts';
 
 @import './components/button';
 @import './components/modal';
