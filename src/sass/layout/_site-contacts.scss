@@ -1,12 +1,27 @@
 .contacts {
     background-color: $secondary-bcg;
-    font-family: DM Sans, Arial, sans-serif ;
+    margin-top: 170px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 197px;
+    }
 
     @media screen and (min-width: 1280px) {
-      background-image: url();
+      margin-top: 234px;
+      background-image: url(/images/contacts-bg.png);
+      // background-size: cover;
+      background-size: 1280px 382px;
+      background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/contacts-bg@2x.png);
       background-size: cover;
     }
-}
+    }
+  }
+
 
 .card {
   margin-bottom: -84px;
@@ -304,6 +319,25 @@
     }
 }
 
-.contacts-button__btn--white:hover {
+.contacts-button__btn--white:hover,
+.contacts-button__btn--white:focus {
   background-color: #ECEBEB;
+}
+
+.contacts-button__icon--white {
+  stroke: white;
+  margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
+
+.contacts-button__icon--red {
+  stroke: $focus-icon-media;
+  margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
 }
