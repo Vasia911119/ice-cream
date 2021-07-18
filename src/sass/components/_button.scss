@@ -1,0 +1,75 @@
+.btn-container {
+  background-color: gray;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 22px;
+  padding-left: 37px;
+  padding-right: 37px;
+  height: 44px;
+  border-style: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: $autofocus-btn;
+  cursor: pointer;
+
+  .angle-bracket {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    stroke: var(--color2, $autofocus-btn);
+    // fill: $autofocus-btn;
+  }
+
+  &.gray {
+    background-color: $infocus-btn;
+  }
+
+  &.red {
+    background-color: $autofocus-btn;
+    color: $third-txt;
+  }
+
+  &.gray:focus,
+  &.gray:hover {
+    background-color: $focus-second-btn;
+  }
+
+  &.red:focus,
+  &.red:hover {
+    background-color: $focus-btn;
+  }
+}
+
+.round-button {
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: $autofocus-btn;
+  cursor: pointer;
+  background-color: $infocus-btn;
+
+  .right-arrow {
+    fill: $autofocus-btn;
+    display: block;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $focus-second-btn;
+  }
+}

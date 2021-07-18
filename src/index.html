@@ -18,6 +18,31 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
 
+    <div class="btn-container">
+      <button class="button gray" type="button">
+        <svg class="angle-bracket" width="16" height="16">
+          <use href="./images/symbol-defs__.svg#icon-vector_arrow"></use>
+        </svg>
+        Buy now
+      </button>
+      <a class="button gray" href="#">
+        <svg class="angle-bracket" width="16" height="16">
+          <use href="./images/symbol-defs__.svg#icon-vector_arrow"></use>
+        </svg>
+        Buy now (а)
+      </a>
+
+      <button class="round-button">
+        <svg class="right-arrow" width="16" height="16">
+          <use href="./images/symbol-defs__.svg#icon-arrow-right_products"></use>
+        </svg>
+      </button>
+
+      <button class="button gray" type="button">Buy now?</button>
+      <button class="button red" type="button">Product</button>
+      <button class="button red angle-bracket" type="button">Product</button>
+    </div>
+
     <include src="./partials/site-header-hero.html"></include>
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
