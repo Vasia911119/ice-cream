@@ -1,40 +1,40 @@
-p,
-h1,
-h2 {
-  margin: 0;
-}
+// p,
+// h1,
+// h2 {
+//   margin: 0;
+// }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
+// img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+// .container {
+//   margin: 0 auto;
+//   padding: 0 20px;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
+//   @media screen and (min-width: 480px) {
+//     max-width: 480px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1200px;
+//   }
+// }
 
-.list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
+// .list {
+//   list-style: none;
+//   margin: 0px;
+//   padding: 0px;
+// }
 
-.link {
-  text-decoration: none;
-}
+// .link {
+//   text-decoration: none;
+// }
 
 .about {
   padding-top: 125px;
@@ -160,6 +160,8 @@ img {
     margin-bottom: 45px;
   }
 }
+
+// Вариант 1
 
 // .about__button {
 //   display: inline-block;
