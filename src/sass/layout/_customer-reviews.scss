@@ -93,9 +93,17 @@
     height: 40px;
 
     position: absolute;
-    top: 28px;
-    left: 61px;
+    top: 32px;
+    left: 50px;
     z-index: 10;
+    @media screen and (max-width: 1279px) {
+      top: 30px;
+      left: 40px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 28px;
+      left: 61px;
+    }
 
     background-image: url('../images/slider/brackets.png');
 
@@ -108,16 +116,10 @@
     }
   }
 }
-.customer-reviews__text {
-  max-width: 157px;
-
-  position: relative;
-  z-index: 20;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
-  text-align: center;
+.customer-reviews__lines {
+  display: flex;
+  width: 180px;
+  justify-content: center;
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -126,6 +128,27 @@
     $reviews-line-color 31px
   );
   background-repeat: no-repeat;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 12px;
+    margin-right: -12px;
+    width: 524px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 813px;
+  }
+}
+.customer-reviews__text {
+  max-width: 157px;
+
+  position: relative;
+  z-index: 20;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  letter-spacing: normal;
+  text-align: center;
 
   @media screen and (max-width: 767px) {
     min-height: 200px;
@@ -137,6 +160,8 @@
 
     font-size: 14px;
     line-height: 2.16;
+    margin-left: -12px;
+    margin-right: 12px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -193,7 +218,7 @@
   position: absolute;
   z-index: 11;
   display: flex;
-  top: 490px;
+  top: 528px;
   left: 86px;
 
   @media screen and (min-width: 768px) {
