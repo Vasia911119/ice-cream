@@ -1,12 +1,12 @@
 .customer-reviews {
+  margin-top: 80px;
+  
   @media screen and (min-width: 768px) {
-    padding-top: 121px;
-    padding-bottom: 119px;
+    margin-top: 121px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 123px;
-    padding-bottom: 132px;
+    margin-top: 123px;
   }
 }
 .customer-rewiews__blog {
@@ -44,16 +44,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  margin-bottom: 205px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 233px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 244px;
-  }
 }
 .customer-reviews__img {
   margin-bottom: 30px;
@@ -179,7 +169,15 @@
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  
+   @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 55px;
+  }
 
   &::before {
     content: '';
