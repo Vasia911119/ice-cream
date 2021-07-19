@@ -5,7 +5,7 @@
 }
 
 .about__title {
-  font-family: TitanOne, 'Arial', monospace;
+  font-family: Titan One, 'Arial', monospace;
   margin-bottom: 15px;
   text-transform: uppercase;
 
@@ -24,7 +24,7 @@
   }
 }
 .about__label {
-  font-family: TitanOne, 'Arial', monospace;
+  font-family: Titan One, 'Arial', monospace;
   margin-bottom: 26px;
   text-transform: uppercase;
 
@@ -221,4 +221,5 @@ input[type='checkbox']:checked ~ .text {
 .about-button__icon {
   display: block;
   margin-left: 10px;
+  stroke: red;
 }
