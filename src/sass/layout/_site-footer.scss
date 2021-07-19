@@ -135,25 +135,26 @@
   color: $main-titles-txt;
 }
 
-
 .creator {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
-line-height: 1.5;
+  line-height: 1.5;
   padding-top: 22px;
   padding-bottom: 25px;
   border-top: 1px solid $reviews-line-color;
 
   text-align: center;
+  
   color: $secondary-txt;
 
   @media screen and (min-width: 768px) {
     line-height: 1.85;
+    white-space: nowrap;
   }
 
   @media screen and (max-width: 767px) {
-    width: 146px;
+    white-space: pre-wrap;
     margin-left: auto;
     margin-right: auto;
   }
