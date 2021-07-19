@@ -1,9 +1,22 @@
 .footer-color {
   background-color: $secondary-bcg;
-  
 }
 
+.flex-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 97px;
+  }
+}
 
+.tadlet-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .description__title {
   font-family: Titan One;
@@ -11,19 +24,45 @@
   line-height: 1.16;
   text-transform: uppercase;
   margin-bottom: 17px;
-
+  width: 232px;
   color: $main-paragraf-txt;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    width: 100%;
+  }
 }
 
 .description__heading {
   font-family: Titan One;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 43px;
-
+  width: 200px;
+  white-space: pre-wrap;
   color: $main-titles-txt;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0;
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    width: 100%;
+  }
 }
 
 .social {
@@ -34,7 +73,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
 
 .social-icons {
   fill: $icon-media;
@@ -47,6 +85,13 @@
   font-size: 12px;
   text-align: end;
   margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .call__adds {
@@ -59,6 +104,18 @@
   color: $main-titles-txt;
 }
 
+hr {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  color: $reviews-line-color;
+
+  border: none;
+  background-color: $reviews-line-color;
+  height: 1px;
+}
+
 .creator {
   font-family: DM Sans;
   font-weight: bold;
@@ -66,8 +123,13 @@
 
   padding-top: 22px;
   padding-bottom: 25px;
-  border-top: 1px solid $reviews-line-color;
 
   text-align: center;
   color: $secondary-txt;
+
+  @media screen and (max-width: 767px) {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
