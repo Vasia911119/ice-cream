@@ -3,8 +3,8 @@
 <symbol id="icon-arrow-right_header" viewBox="0 0 32 32">
 <path d="M0 0h32v32h-32z"></path>
 </symbol>
-<symbol id="icon-arrow-right_products" viewBox="0 0 32 32">
-<path d="M0 0h32v32h-32z"></path>
+<symbol id="icon-arrow-right_products" viewBox="0 0 492.004 492.004">
+<path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></path>
 </symbol>
 <symbol id="icon-burger_menu_header" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
@@ -57,7 +57,7 @@
 <path  d="M17.342 21.048l-0.674 8.86c0.966 0 1.384-0.388 1.886-0.852l4.526-4.040 9.38 6.414c1.72 0.894 2.934 0.422 3.398-1.478l6.158-26.932c0.548-2.374-0.92-3.302-2.594-2.72l-36.194 12.934c-2.47 0.896-2.434 2.18-0.42 2.766l9.252 2.684 21.494-12.552c1.012-0.626 1.932-0.28 1.176 0.346l-17.39 14.57z"></path>
 </symbol>
 <symbol id="icon-vector_arrow" viewBox="0 0 22 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.49 3.2l13.696 12.8-13.696 12.8"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.49 3.2l13.696 12.8-13.696 12.8"></path>
 </symbol>
 <symbol id="icon-vector_from_burger" viewBox="0 0 320 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h320"></path>

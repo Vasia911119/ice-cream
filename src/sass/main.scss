@@ -6,7 +6,6 @@
 @import './vendors/normalize';
 @import './utils/variables';
 @import './utils/visually-hidden';
-
 @import './base/common';
 @import './base/container';
 @import './base/mixins';
@@ -24,3 +23,5 @@
 
 @import './components/button';
 @import './components/modal';
+
+@import './layout/site-contacts';
