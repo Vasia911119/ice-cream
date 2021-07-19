@@ -6,22 +6,36 @@
 @import './vendors/normalize';
 @import './utils/variables';
 @import './utils/visually-hidden';
-
 @import './base/common';
 @import './base/container';
 @import './base/mixins';
 @import './base/placeholders';
-
-@import './layout/site-header-hero';
 @import './base/section';
-
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/customer-reviews';
 @import './layout/gallery';
 @import './layout/products';
 @import './layout/site-footer';
-@import './layout/site-contacts';
+
+
+
+@import './layout/site-header-hero';
 
 @import './components/button';
 @import './components/modal';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './layout/site-contacts';
