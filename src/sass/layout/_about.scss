@@ -2,6 +2,27 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: $secondary-bcg;
+
+  @media screen and (max-width: 767px) {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/milk-about-mobile.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk-about-mobile2x.png');
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/milk-about-desktop.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk-about-desktop2x.png');
+    }
+  }
 }
 
 .about__title {
@@ -63,17 +84,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-
-  @media screen and (min-width: 1280px) {
-    background-repeat: no-repeat;
-    min-width: 1282px;
-    min-height: 534px;
-    background-image: url('../images/milk-about-desktop.png');
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/milk-about-desktop2x.png');
-    }
-  }
 }
 
 .about__description1 {
@@ -81,8 +91,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58em;
-  text-align: center;
-
   color: $primary-txt;
   @media screen and (min-width: 768px) {
     padding-top: 50px;
@@ -96,72 +104,42 @@
   }
 }
 .about__description2 {
-  margin-bottom: 47px;
+  text-align: left;
+  margin-bottom: 15px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58em;
-  text-align: center;
   color: $secondary-txt;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: 1.786em;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.93em;
+    margin-bottom: 40px;
+  }
+}
+
+.about__description3 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58em;
+  color: $secondary-txt;
+  margin-bottom: 25px;
+  @media screen and (min-width: 767px) {
     font-size: 14px;
     line-height: 1.786em;
     letter-spacing: 0.04em;
     margin-bottom: 62px;
-    background-repeat: no-repeat;
-    min-width: 320px;
-    min-height: 133px;
-    background-image: url('../images/milk-about-mobile.png');
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/milk-about-mobile2x.png');
-    }
   }
   @media screen and (min-width: 1280px) {
-    font-size: 14px;
     line-height: 1.93em;
     margin-bottom: 45px;
   }
 }
-
-// Вариант 1
-
-// .about__button {
-//   display: inline-block;
-//   margin: 0 auto;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.29em;
-//   border-radius: 22px;
-//   padding: 10px 37px;
-//   border: 1px solid transparent;
-
-//   background-color:$primary-txt;
-//   color: #d41443;
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   @media screen and (min-width: 768px) {
-//     font-size: 16px;
-//     line-height: 1.313em;
-//     margin: 0;
-//   }
-//   &:hover,
-//   &:focus {
-//     background-color:$focus-second-btn;
-//   }
-// }
-
-// .about-button__icon {
-//   display: block;
-//   margin-left: 10px;
-// }
-
-// Вариант 2
-
+// Кнопка Read more
 .text,
 input[type='checkbox'] {
   opacity: 0;
@@ -170,6 +148,8 @@ input[type='checkbox'] {
   transform: scaleX(0.5);
 }
 .text {
+  width: 50vw;
+  height: 30vh;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.58em;
