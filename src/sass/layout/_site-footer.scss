@@ -5,7 +5,7 @@
 .flex-footer {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding-bottom: 97px;
   }
 }
@@ -15,6 +15,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    margin-left: auto;
   }
 }
 
@@ -74,19 +76,48 @@
   justify-content: flex-end;
 }
 
+.social-item__list {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  display: flex;
+
+  &:hover,
+  &:focus {
+    background-color: $focus-icon-media;
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  background-color: $icon-media;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
 .social-icons {
-  fill: $icon-media;
+  fill: $third-txt;
 }
 
 .call {
   display: block;
   font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   text-align: end;
   margin-bottom: 43px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -104,31 +135,25 @@
   color: $main-titles-txt;
 }
 
-hr {
-  position: absolute;
-  top: auto;
-  left: 0;
-  width: 100%;
-  color: $reviews-line-color;
-
-  border: none;
-  background-color: $reviews-line-color;
-  height: 1px;
-}
 
 .creator {
   font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-
+line-height: 1.5;
   padding-top: 22px;
   padding-bottom: 25px;
+  border-top: 1px solid $reviews-line-color;
 
   text-align: center;
   color: $secondary-txt;
 
+  @media screen and (min-width: 768px) {
+    line-height: 1.85;
+  }
+
   @media screen and (max-width: 767px) {
-    width: 150px;
+    width: 146px;
     margin-left: auto;
     margin-right: auto;
   }
