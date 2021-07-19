@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 123px;
 
-  background: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+  background: linear-gradient(to bottom, $secondary-bcg 40%, $third-txt 40%);
 
-  .gallery-overley {
+  .gallery__overley {
     margin-left: auto;
     margin-right: auto;
   }

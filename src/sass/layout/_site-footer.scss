@@ -1,9 +1,24 @@
 .footer-color {
   background-color: $secondary-bcg;
-  
 }
 
+.flex-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 97px;
+  }
+}
 
+.tadlet-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: auto;
+  }
+}
 
 .description__title {
   font-family: Titan One;
@@ -11,19 +26,45 @@
   line-height: 1.16;
   text-transform: uppercase;
   margin-bottom: 17px;
-
+  width: 232px;
   color: $main-paragraf-txt;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    width: 100%;
+  }
 }
 
 .description__heading {
   font-family: Titan One;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 43px;
-
+  width: 200px;
+  white-space: pre-wrap;
   color: $main-titles-txt;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0;
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    width: 100%;
+  }
 }
 
 .social {
@@ -35,18 +76,53 @@
   justify-content: flex-end;
 }
 
+.social-item__list {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  display: flex;
+
+  &:hover,
+  &:focus {
+    background-color: $focus-icon-media;
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  background-color: $icon-media;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
 
 .social-icons {
-  fill: $icon-media;
+  fill: $third-txt;
 }
 
 .call {
   display: block;
   font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   text-align: end;
   margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .call__adds {
@@ -61,13 +137,25 @@
 
 .creator {
   font-family: DM Sans;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-
+  line-height: 1.5;
   padding-top: 22px;
   padding-bottom: 25px;
   border-top: 1px solid $reviews-line-color;
 
   text-align: center;
+  
   color: $secondary-txt;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.85;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 767px) {
+    white-space: pre-wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
