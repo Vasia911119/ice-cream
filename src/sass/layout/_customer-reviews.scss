@@ -46,6 +46,7 @@
   text-align: center;
 }
 .customer-reviews__img {
+  border-radius: 50%;
   margin-bottom: 29px;
   margin-left: auto;
   margin-right: auto;
@@ -231,16 +232,16 @@
   z-index: 11;
   display: flex;
   top: 527px;
-  left: 86px;
+  left: 4%;
 
   @media screen and (min-width: 768px) {
     top: 368px;
-    left: 256px;
+    left: 29%;
   }
 
   @media screen and (min-width: 1280px) {
     top: 336px;
-    left: 409px;
+    left: 36%;
   }
 }
 
@@ -278,6 +279,26 @@
   transform: translateX(-200%);
 }
 
+#select__item-4:checked ~ .customer-reviews__list {
+  transform: translateX(-300%);
+}
+
+#select__item-5:checked ~ .customer-reviews__list {
+  transform: translateX(-400%);
+}
+
+#select__item-6:checked ~ .customer-reviews__list {
+  transform: translateX(-500%);
+}
+
+#select__item-7:checked ~ .customer-reviews__list {
+  transform: translateX(-600%);
+}
+
+#select__item-8:checked ~ .customer-reviews__list {
+  transform: translateX(-700%);
+}
+
 #select__item-1:checked ~ .controls .control__item-main {
   filter: invert(0%);
   transform: scale(1.3);
@@ -289,12 +310,22 @@
 }
 
 #select__item-2:checked ~ .controls .item-2,
-#select__item-3:checked ~ .controls .item-3 {
+#select__item-3:checked ~ .controls .item-3,
+#select__item-4:checked ~ .controls .item-4,
+#select__item-5:checked ~ .controls .item-5,
+#select__item-6:checked ~ .controls .item-6,
+#select__item-7:checked ~ .controls .item-7,
+#select__item-8:checked ~ .controls .item-8 {
   transform: scale(1.3);
   background: $radio-btn-active;
 }
 
 #select__item-2:hover ~ .controls .item-2,
-#select__item-3:hover ~ .controls .item-3 {
+#select__item-3:hover ~ .controls .item-3,
+#select__item-4:hover ~ .controls .item-4,
+#select__item-5:hover ~ .controls .item-5,
+#select__item-6:hover ~ .controls .item-6,
+#select__item-7:hover ~ .controls .item-7,
+#select__item-8:hover ~ .controls .item-8 {
   background: $radio-btn-active;
 }
