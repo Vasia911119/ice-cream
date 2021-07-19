@@ -1,6 +1,6 @@
 .customer-reviews {
   margin-top: 80px;
-  
+
   @media screen and (min-width: 768px) {
     margin-top: 121px;
   }
@@ -46,9 +46,16 @@
   text-align: center;
 }
 .customer-reviews__img {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 .customer-reviews__content {
   width: 280px;
@@ -61,7 +68,7 @@
   justify-content: center;
 
   padding: 43px 50px 26px 50px;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 
@@ -69,12 +76,14 @@
 
   @media screen and (min-width: 768px) {
     width: 620px;
+    padding: 47px 50px 34px 50px;
     margin-bottom: 42px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 926px;
-    margin-bottom: 34px;
+    padding: 43px 50px 26px 50px;
+    margin-bottom: 32px;
   }
 
   &::before {
@@ -169,22 +178,25 @@
   font-size: 14px;
   line-height: 1.86;
   text-align: center;
-  margin-bottom: 32px;
-  
-   @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
+  margin-bottom: 34px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 34px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 55px;
+    margin-bottom: 38px;
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: -18px;
+    top: -20px;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 1280px) {
+      top: -17px;
+    }
 
     width: 32px;
     height: 4px;
@@ -216,15 +228,16 @@
   position: absolute;
   z-index: 11;
   display: flex;
-  top: 528px;
+  top: 527px;
   left: 86px;
 
   @media screen and (min-width: 768px) {
-    top: 370px;
+    top: 368px;
     left: 256px;
   }
 
   @media screen and (min-width: 1280px) {
+    top: 336px;
     left: 409px;
   }
 }
@@ -242,7 +255,6 @@
 
 .control__item-main {
   display: block;
-  // background-image: url('../images/slider/home.png');
   background-image: url('../images/icons/home.svg');
   filter: invert(0.5) brightness(170%);
   width: 12.4px;
