@@ -323,7 +323,7 @@
 
 .hero-image-girl {
   position: absolute;
-  right: 20px;
+  right: 95px;
   bottom: 0;
 
   @media screen and (max-width: 767px) {
@@ -464,7 +464,10 @@
 .header-burger-button-wrapper {
   display: flex;
   max-width: 220px;
-  margin-left: auto;
+
+  @media screen and (max-width: 1279px) {
+    margin-left: auto;
+  }
 }
 
 .menu-container {
