@@ -1,17 +1,142 @@
 .gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  background: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
-
-  .gallery-overley {
-    margin-left: auto;
-    margin-right: auto;
+  background: linear-gradient(to bottom, $secondary-bcg 40%, $third-txt 40%);
+}
+.gallary__img-mob,
+.gallary__img-tab,
+.gallary__img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallary__img-mob {
+  height: 122px;
+  width: 283px;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
-
-  & .container {
-    padding: 0;
+}
+.gallary__img-tab {
+  height: 264px;
+  width: 615px;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.gallary__img {
+  height: 430px;
+  width: 1006px;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+.gallary__img-frozen,
+.gallary__img-holding,
+.gallary__img-pinkice,
+.gallary__img-main,
+.gallary__img-girl,
+.gallary__img-dessert,
+.gallary__img-street,
+.gallary__img-dog,
+.gallary__img-drink,
+.gallary__img-weirddessert,
+.gallary__img-tab-frozen,
+.gallary__img-tab-holding,
+.gallary__img-tab-pinkice,
+.gallary__img-tab-main,
+.gallary__img-tab-girl,
+.gallary__img-tab-dessert,
+.gallary__img-tab-street,
+.gallary__img-tab-dog,
+.gallary__img-tab-drink,
+.gallary__img-tab-weirddessert,
+.gallary__img-mob-frozen,
+.gallary__img-mob-holding,
+.gallary__img-mob-pinkice,
+.gallary__img-mob-main,
+.gallary__img-mob-girl,
+.gallary__img-mob-dessert,
+.gallary__img-mob-street,
+.gallary__img-mob-dog,
+.gallary__img-mob-drink,
+.gallary__img-mob-weirddessert {
+  transition-property: transform, z-index;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  z-index: 1;
+  &:hover {
+    transform: scale(1.5);
+    z-index: 10;
+  }
+  position: absolute;
+  border-radius: 20px;
+  @media screen and (max-width: 767px) {
+    border-radius: 6px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    border-radius: 12px;
+  }
+}
+.gallary__img-mob-frozen,
+.gallary__img-tab-frozen,
+.gallary__img-frozen {
+  top: calc(100% / 3);
+  left: 0;
+}
+.gallary__img-mob-weirddessert,
+.gallary__img-tab-weirddessert,
+.gallary__img-weirddessert {
+  top: calc(100% / 3);
+  right: 0;
+}
+.gallary__img-mob-holding,
+.gallary__img-tab-holding,
+.gallary__img-holding {
+  top: calc(100% / 6);
+  left: calc(100% / 7);
+}
+.gallary__img-mob-drink,
+.gallary__img-tab-drink,
+.gallary__img-drink {
+  bottom: calc(100% / 6);
+  right: calc(100% / 7);
+}
+.gallary__img-mob-pinkice,
+.gallary__img-tab-pinkice,
+.gallary__img-pinkice {
+  bottom: calc(100% / 6);
+  left: calc(100% / 7);
+}
+.gallary__img-mob-dog,
+.gallary__img-tab-dog,
+.gallary__img-dog {
+  top: calc(100% / 6);
+  right: calc(100% / 7);
+}
+.gallary__img-mob-main,
+.gallary__img-tab-main,
+.gallary__img-main {
+  top: 0;
+  left: calc(100% / 3.5);
+}
+.gallary__img-mob-girl,
+.gallary__img-tab-girl,
+.gallary__img-girl {
+  bottom: 0;
+  left: calc(100% / 3.5);
+}
+.gallary__img-mob-dessert,
+.gallary__img-tab-dessert,
+.gallary__img-dessert {
+  top: calc(100% / 4);
+  right: calc(100% / 3.5);
+}
+
+.gallary__img-mob-street,
+.gallary__img-tab-street,
+.gallary__img-street {
+  bottom: calc(100% / 12);
+  right: calc(100% / 3.5);
 }
