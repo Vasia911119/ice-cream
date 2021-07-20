@@ -38,9 +38,9 @@
 }
 
 @media screen and (min-width:768px) {
-  width: 680px;
-  height: 830px;
-  padding: 40px;
+  width: 650px;
+  // height: 750px;
+  padding: 25px;
 }
 }
 
@@ -68,12 +68,12 @@
 .modal-maps__frame {
   display: flex;
   width:290px;
-  height: 290px;
+  height: 220px;
   border: 1px solid $focus-btn;
 
   @media screen and (min-width:768px) {
   width:600px;
-  height: 250px;
+  height: 220px;
   border: 1px solid $focus-btn;
   border-radius: 5px;
 }
