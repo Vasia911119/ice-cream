@@ -125,6 +125,7 @@
       padding-left: 44px;
       padding-right: 44px;
       margin-top: 259px;
+      flex-basis: calc(100% / 3 - 30px);
     }
   }
 
@@ -135,16 +136,16 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 1.15px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: $third-txt;
 
     @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 1.15px;
+      // height: 34px;
     }
   }
   &__text {
@@ -156,12 +157,18 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $third-txt;
+    margin-bottom: 32px;
   }
   &__image {
     position: absolute;
     top: -25%;
     left: 50%;
     transform: translateX(-50%);
+    @media screen and (min-width: 1280px) {
+      width: 335px;
+      height: 335px;
+      top: -210px;
+    }
   }
 }
 
@@ -171,6 +178,10 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 
   .ellipse {
     background-color: $infocus-btn;
