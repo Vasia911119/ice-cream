@@ -38,9 +38,9 @@
 }
 
 @media screen and (min-width:768px) {
-  width: 680px;
-  height: 530px;
-  padding: 40px;
+  width: 650px;
+  // height: 750px;
+  padding: 25px;
 }
 }
 
@@ -65,15 +65,20 @@
   border: 1px solid $focus-btn;
 }
 }
-.maps {
+.modal-maps__frame {
   display: flex;
   width:290px;
-  height: 450px;
-  border: 1px solid $vector-line;
+  height: 220px;
+  border: 1px solid $focus-btn;
 
   @media screen and (min-width:768px) {
   width:600px;
-  height: 450px;
-  border: none;
+  height: 220px;
+  border: 1px solid $focus-btn;
+  border-radius: 5px;
 }
+}
+
+.modal-maps__item:not(:last-child) {
+  margin-bottom: 5px;
 }

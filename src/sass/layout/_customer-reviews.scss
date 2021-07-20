@@ -93,7 +93,7 @@
     height: 40px;
 
     position: absolute;
-    top: 32px;
+    top: 30px;
     left: 50px;
     z-index: 10;
     @media screen and (max-width: 1279px) {
@@ -124,8 +124,8 @@
     to bottom,
     transparent,
     transparent 29px,
-    $reviews-line-color 29px,
-    $reviews-line-color 30px
+    $reviews-line-color 30px,
+    $reviews-line-color 31px
   );
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
