@@ -143,25 +143,24 @@
 }
 // Кнопка Read more
 .text,
-input[type='checkbox'] {
+.btn__input {
   opacity: 0;
   position: absolute;
   pointer-events: none;
   transform: scaleX(0.5);
 }
 .text {
-  width: 100vw;
-  height: 50vh;
+  max-width: 40vw;
 
   font-weight: 700;
   font-size: 30px;
   line-height: 1.58em;
 }
 
-input[type='checkbox']:checked ~ .text {
+.btn__input:checked ~ .text {
   opacity: 1;
   transform: scaleX(1.2);
-  background: pink;
+  background: $buy-now-bcg;
   box-shadow: inset 3px 3px 10px #2e49b6;
   box-shadow: inset 3px 3px 10px #2e49b6;
   box-shadow: inset 3px 3px 10px #2e49b6;
@@ -173,15 +172,14 @@ input[type='checkbox']:checked ~ .text {
 /* Стилизация псевдокнопки */
 .btn {
   display: inline-block;
-  // margin: 0 auto;
   max-width: 176px;
+  white-space: nowrap;
 
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.29em;
   border-radius: 22px;
@@ -193,8 +191,7 @@ input[type='checkbox']:checked ~ .text {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 1.313em;
-    margin: 0;
+    line-height: 1.31em;
   }
   &:hover,
   &:focus {
