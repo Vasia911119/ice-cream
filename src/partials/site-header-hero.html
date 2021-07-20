@@ -1,42 +1,97 @@
 <header class="header">
-    <div class="container">
-        <div class="header__wrapper">
+    <!-- <div class="container"> -->
+    <div class="header__wrapper">
 
-            <!-- Main Menu -->
+        <!-- Main Menu -->
 
-            <a href="/index.html" class=" logo nav-menu__logo">
-                <img class="hero-icecream__image" srcset="./images/logo-1x.png 1x, ./images/logo-2x.png 2x"
-                    src="./images/logo-1x.png" alt="ice cream made with passion">
-            </a>
+        <a href="/index.html" class=" logo nav-menu__logo">
+            <img class="hero-icecream__image" srcset="./images/logo-1x.png 1x, ./images/logo-2x.png 2x"
+                src="./images/logo-1x.png" alt="ice cream made with passion">
+        </a>
 
-            <nav class="nav-menu">
-                <ul class="nav-menu__list ">
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link nav-menu__link--current">Home</a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link">About us</a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link">How it’s made?</a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link">Our products</a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__link">Contact</a>
-                    </li>
-                </ul>
+        <nav class="nav-menu">
+            <ul class="nav-menu__list ">
+                <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link nav-menu__link--current">Home</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#aabout" class="nav-menu__link">About us</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#advantages" class="nav-menu__link">How it’s made?</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#products" class="nav-menu__link">Our products</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#contacts" class="nav-menu__link">Contact</a>
+                </li>
+            </ul>
 
 
-            </nav>
+        </nav>
+
+
+
+        <!-- Mobile-menu -->
+        <div class="header-burger-button-wrapper">
+            <button class="mobile-menu-button js-open-menu" type="button" aria-label="Открыть мобильное меню"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-button__icon" width=20 height=20>
+                    <use class="icon-mobile-menu" href="./images/icons/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <div class=" tablet-mobile-container">
+                    <div class=" mobile-container">
+                        <button class="mobile-menu-button mobile-menu-button__close js-close-menu is-open" type="button"
+                            aria-label="Открыть мобильное меню" aria-expanded="false" aria-controls="mobile-menu">
+                            <svg class="mobile-menu-button__icon" width=20 height=20>
+                                <use class="icon-close-mobile-menu" href="./images/icons/sprite.svg#icon-close">
+                                </use>
+                            </svg>
+                        </button>
+                        <button class="header-button__mob-menu  js-close-menu" type="button"
+                            aria-label="Купить сейчас"><span class="header-button__wrapper"><span
+                                    class="header-button__title">Buy
+                                    now</span>
+                                <svg class="header-button__angle-bracket" width="8" height="16">
+                                    <use href="./images/icons/sprite.svg#icon-arrow-right-button"></use>
+                                </svg></span></button>
+                        <nav class="mobile-main-menu">
+                            <ul class="mobile-main-menu__list">
+                                <li class="mobile-main-menu__item">
+                                    <a href="#" class="mobile-main-menu__link mobile-main-menu__link--current">Home</a>
+                                </li>
+                                <li class="mobile-main-menu__item">
+                                    <a href="#about" class="mobile-main-menu__link">About us</a>
+                                </li>
+                                <li class="mobile-main-menu__item">
+                                    <a href="#advantages" class="mobile-main-menu__link">How it’s made?</a>
+                                </li>
+                                <li class="mobile-main-menu__item">
+                                    <a href="#products" class="mobile-main-menu__link">Our products</a>
+                                </li>
+                                <li class="mobile-main-menu__item">
+                                    <a href="#contacts" class="mobile-main-menu__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile-menu-END -->
 
             <!-- Header Button -->
-            <button class="header-button" type="button" aria-label="Купить сейчас" data-modal-open>Buy
-                now</button>
-
-
+            <button class="header-button js-menu-container" type="button" aria-label="Купить сейчас">
+                <span class="header-button__wrapper"><span class="header-button__title">Buy
+                        now</span>
+                    <svg class="header-button__angle-bracket" width="8" height="16">
+                        <use href="./images/icons/sprite.svg#icon-arrow-right-button"></use>
+                    </svg></span></button>
         </div>
+
+        <!-- </div> -->
     </div>
 </header>
 
@@ -61,10 +116,15 @@
                     <li class="chain-stores__item"><span class="chain-stores__item--red">23</span>food trucks</li>
                 </ul>
             </div>
-            <div class="hero-nav-batton">
-                <a class="hero-nav-batton__link button red angle-bracket" href="#">Products</a>
-                <a class="hero-nav-batton__link button gray" href="#">How it’s made?</a>
-            </div>
+
+            <ul class="hero-nav-batton">
+                <li><a class="hero-nav-batton__link button red angle-bracket" href="#">Products</a></li>
+                <li><a class="hero-nav-batton__link button gray" href="#">How it’s made?</a>
+                </li>
+            </ul>
+
+
+
 
 
             <div class="hero-milk">
@@ -75,7 +135,12 @@
                     <p class="hero-milk__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et</p>
-                    <a class="hero-milk__batton button gray" href="#">&</a>
+
+                    <a class="round-button">
+                        <svg class="round-button__right-arrow" width="16" height="16">
+                            <use href="./images/icons/sprite.svg#icon-arrow-right_products"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -83,15 +148,7 @@
                 <img class="hero-image-girl__image"
                     srcset="./images/desktop/desk_slider-pic4_1x-min.png 1x, ./images/desktop/desk_slider-pic4_2x-min.png 2x"
                     src="./images/desktop/desk_slider-pic4_1x-min.png" alt="bio eco milk">
-
             </div>
-
-
-
-
-
         </div>
-
-
     </section>
 </main>

@@ -1,72 +1,82 @@
-.button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 22px;
-  padding-left: 37px;
-  padding-right: 37px;
-  height: 44px;
-  border-style: none;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
-  color: $autofocus-btn;
-  cursor: pointer;
+// .button {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 22px;
+//   padding-left: 37px;
+//   padding-right: 37px;
+//   height: 44px;
+//   border-style: none;
+//   font-family: DM Sans;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.3;
+//   letter-spacing: 0.06em;
+//   color: $autofocus-btn;
+//   //   transition: background-color 250ms $transition-cubic;
 
-  .angle-bracket {
-    position: absolute;
-    top: 50%;
-    right: 15%;
-    transform: translateY(-50%);
-    stroke: var(--color2, currentColor);
-  }
+//   &--without-arrow {
+//     height: 24px;
+//     font-weight: 400;
+//     font-size: 8px;
+//     line-height: 1.3;
 
-  &.gray {
-    background-color: $infocus-btn;
-  }
+//     @media screen and (min-width: 1200px) {
+//       height: 40px;
+//       font-size: 14px;
+//     }
+//   }
 
-  &.red {
-    background-color: $autofocus-btn;
-    color: $third-txt;
-  }
+//   &__angle-bracket {
+//     position: absolute;
+//     top: 50%;
+//     right: 15%;
+//     transform: translateY(-50%);
+//     stroke: var(--color2, currentColor);
+//   }
 
-  &.gray:focus,
-  &.gray:hover {
-    background-color: $focus-second-btn;
-  }
+//   &--gray {
+//     background-color: $infocus-btn;
+//   }
 
-  &.red:focus,
-  &.red:hover {
-    background-color: $focus-btn;
-  }
-}
+//   &--red {
+//     background-color: $autofocus-btn;
+//     color: $third-txt;
+//   }
 
-.round-button {
-  padding: 15px;
-  border: none;
-  align-self: center;
-  margin-top: 30px;
-  border-radius: 50%;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
-  color: $autofocus-btn;
-  cursor: pointer;
-  background-color: $infocus-btn;
+//   &--gray:focus,
+//   &--gray:hover {
+//     background-color: $focus-second-btn;
+//   }
 
-  .right-arrow {
-    fill: $autofocus-btn;
-    display: block;
-  }
+//   &--red:focus,
+//   &--red:hover {
+//     background-color: $focus-btn;
+//   }
+// }
 
-  &:focus,
-  &:hover {
-    background-color: $focus-second-btn;
-  }
-}
+// .round-button {
+//   padding: 15px;
+//   border: none;
+//   align-self: center;
+//   margin-top: 30px;
+//   border-radius: 50%;
+//   font-family: DM Sans;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.3;
+//   letter-spacing: 0.06em;
+//   color: $autofocus-btn;
+//   background-color: $infocus-btn;
+//   //   transition: background-color 250ms $transition-cubic;
+
+//   &__right-arrow {
+//     fill: $autofocus-btn;
+//     display: block;
+//   }
+
+//   &:focus,
+//   &:hover {
+//     background-color: $focus-second-btn;
+//   }
+// }
