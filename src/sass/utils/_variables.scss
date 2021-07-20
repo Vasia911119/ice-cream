@@ -19,6 +19,7 @@ $secondary-bcg: #fff5f6;
 $buy-now-bcg: #e17992; /*цвет фона открывающегося меню корзины*/
 $quote-bcg: #fafafa;
 $reviews-line-color: #e1e1e1; /* цвет линии в секции customer-reviews */
+$mobile-menu-line-color: #e18298; /* цвет линий мобильном меню */
 
 /*Иконки соц-сетей, фон*/
 
@@ -47,5 +48,7 @@ $title-product-third: #f0d1a5;
 /* Фон векторной полосы*/
 $vector-line: #e1e1e1;
 
+/* Анимация */
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /*Кубик*/
 $transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
