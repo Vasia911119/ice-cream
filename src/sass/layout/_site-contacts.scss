@@ -297,6 +297,7 @@
   // cursor: pointer;
   padding: 0;
   letter-spacing: 0;
+  transition: background-color 250ms $transition-cubic;
 
   @media screen and (min-width: 768px) {
     width: 191px;
@@ -305,6 +306,11 @@
   @media screen and (min-width: 1280px) {
     width: 198px;
   }
+}
+
+&__btn--red:hover,
+&__btn--red:focus {
+  background-color: $focus-btn;
 }
 
 &__btn--white {
