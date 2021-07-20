@@ -4,10 +4,11 @@
 
 .advantages-list{
     width:100%;
-    padding-bottom: 97px;
+    padding-bottom: 96px;
+    padding-top: 15px;
 
     @media screen and(min-width:768px) {
-    display:flex;
+    display:inline-flex;
     padding-bottom: 140px;}
 }
 
@@ -18,7 +19,7 @@
         margin-right: 30px;}
 }
 
-.advantages-list__item{
+.advantages-list-item{
    
     
 
@@ -39,14 +40,12 @@
     
 }
 
-.advantages__item-title{
-    font-family: Titan One, "Arial", sans-serif;
+.advantages-item__title{
+    font-family: Titan One, "Arial", monospace;
     font-size: 36px;
     line-height: 1.139;
     letter-spacing: 0.04em;
     color: $main-titles-txt;
-    
-    
 
     padding-bottom: 21px;
 
@@ -144,7 +143,7 @@
 }
 }
 
-.advantages__item-description{
+.advantages-item__description{
     font-weight: 700;
     font-size: 12px;
     line-height: 1.667;

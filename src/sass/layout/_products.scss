@@ -70,18 +70,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: -20px;
-      margin-bottom: -20px;
     }
 
     @media screen and (min-width: 768px) {
       display: flex;
     }
 
-    @media screen and (min-width: 1280px) {
-      margin-left: -30px;
-      margin-bottom: -30px;
-    }
+    margin-left: -20px;
+    margin-bottom: -20px;
   }
 
   &__item {
@@ -120,23 +116,15 @@
       padding-left: 11px;
       padding-right: 11px;
       margin-top: 150px;
-      margin-bottom: 0px;
       flex-basis: calc(100% / 3 - 20px);
     }
 
     @media screen and (min-width: 1280px) {
-      display: block;
-      height: 525px;
-      padding-top: 180px;
+      padding-top: 163px;
       padding-bottom: 50px;
       padding-left: 44px;
       padding-right: 44px;
       margin-top: 259px;
-      flex-basis: calc(100% / 3 - 30px);
-      margin-left: 0px;
-      width: 330px;
-      margin-left: 30px;
-      margin-bottom: 30px;
     }
   }
 
@@ -147,10 +135,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.15px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
     color: $third-txt;
 
     @media screen and (min-width: 1280px) {
@@ -158,61 +147,30 @@
       line-height: 1.15px;
     }
   }
-
   &__text {
+    font-family: DM Sans;
+    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
     color: $third-txt;
-
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      line-height: 1.76;
-    }
-  }
-  &__text-bottom {
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
   }
   &__image {
     position: absolute;
     top: -25%;
     left: 50%;
     transform: translateX(-50%);
-    @media screen and (min-width: 768px) {
-      top: -102px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 335px;
-      height: 335px;
-      top: -210px;
-    }
-  }
-  &__button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 1280px) {
-      position: absolute;
-      bottom: 50px;
-      left: 144px;
-    }
   }
 }
+
 .ellipse-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  @media screen and (min-width: 1280px) {
-    margin-top: 45px;
-    margin-bottom: 32px;
-  }
 
   .ellipse {
     background-color: $infocus-btn;

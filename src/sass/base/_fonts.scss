@@ -3,7 +3,7 @@
 /*пример подключения*/
 
 /*
-        font-family: DM Sans, "Arial", sans-serif;
+        font-family: DM Sans, "Arial", monospace;
     W A R N I N G !!!
         необходимо подключить в main.scss - @import './base/fonts';
         необходимо подключить предзагрузку в index.html -- <link rel="preload" href="../src/fonts/DMSans-400.woff" as="font">
