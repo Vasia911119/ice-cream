@@ -37,10 +37,23 @@
     font-size: 16px;
     line-height: 1.3125;
     color: $third-txt;
+    transition: color 250ms $transition-cubic;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 35px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    transition: color 250ms $transition-cubic;
+
+    &:hover,
+    &:focus {
+      color: $main-titles-txt;
+    }
   }
 
   &__link--current {
@@ -241,6 +254,26 @@
       height: 346px;
     }
   }
+
+  &::before {
+    animation: rotateWithOrigin 2000ms linear 1000ms 1;
+    transform-origin: bottom left;
+  }
+
+  // &::after {
+  //   top: calc(var(--dot-size) / -2);
+  //   right: calc(var(--dot-size) / -2);
+  // }
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
 }
 
 .hero-icecream__image {
@@ -262,6 +295,7 @@
 .hero-nav-batton {
   margin-bottom: 19px;
   display: flex;
+  position: relative;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 56px;
