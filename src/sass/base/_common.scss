@@ -1,7 +1,11 @@
 body {
-  font-family: DM Sans, "Arial", sans-serif;
+  font-family: DM Sans, 'Arial', sans-serif;
   font-style: normal;
   overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 svg {

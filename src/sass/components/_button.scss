@@ -70,6 +70,12 @@
     background-color: $infocus-btn;
     transition: background-color 250ms $transition-cubic;
 
+    @media screen and (max-width: 1279px) {
+      height: 18px;
+      width: 18px;
+      margin: 0;
+    }
+
     &:focus,
     &:hover {
       background-color: $focus-second-btn;

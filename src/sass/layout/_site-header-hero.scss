@@ -459,9 +459,9 @@
   stroke: $main-titles-txt;
 }
 
-.menu-container.is-open .header-button {
-  display: none;
-}
+// .menu-container.is-open .header-button {
+//   display: none;
+// }
 
 // MOBILE MENU
 
@@ -477,7 +477,7 @@
 .menu-container {
   // display: none;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -507,8 +507,8 @@
 
 .menu-container.is-open {
   @media screen and (max-width: 1279px) {
-    display: block;
-    transform: translateY(0);
+    // display: block;
+    transform: translateX(0);
   }
 }
 
