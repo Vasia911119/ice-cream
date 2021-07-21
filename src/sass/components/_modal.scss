@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,9 +24,9 @@
 .modal {
   overflow-y: auto;
   height: 100vh;
-  // position: absolute;
-  position: relative;
-  z-index: 30;
+  position: absolute;
+  // position: relative;
+  // z-index: 30;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
