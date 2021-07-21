@@ -299,14 +299,3 @@
   width: 12px;
   height: 12.5px;
 }
-
-#select__item-1:hover ~ .controls .item-1,
-#select__item-2:hover ~ .controls .item-2,
-#select__item-3:hover ~ .controls .item-3,
-#select__item-4:hover ~ .controls .item-4,
-#select__item-5:hover ~ .controls .item-5,
-#select__item-6:hover ~ .controls .item-6,
-#select__item-7:hover ~ .controls .item-7,
-#select__item-8:hover ~ .controls .item-8 {
-  cursor: pointer;
-}
