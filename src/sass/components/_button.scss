@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   border-radius: 22px;
+  margin: 0;
   //   padding-left: 37px;
   //   padding-right: 37px;
   height: 44px;
@@ -21,7 +22,7 @@
     font-size: 8px;
     line-height: 1.3;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       height: 40px;
       font-size: 14px;
     }
@@ -61,11 +62,7 @@
     align-self: center;
     margin-top: 30px;
     border-radius: 50%;
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 0.06em;
+    font-size: 0;
     color: $autofocus-btn;
     background-color: $infocus-btn;
     transition: background-color 250ms $transition-cubic;
