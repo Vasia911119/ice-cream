@@ -63,7 +63,7 @@
 .gallary__img-mob-drink,
 .gallary__img-mob-weirddessert {
   transition-property: transform, z-index;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: ease-in-out;
   z-index: 1;
   &:hover {
