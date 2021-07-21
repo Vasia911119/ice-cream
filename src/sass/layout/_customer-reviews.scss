@@ -308,10 +308,5 @@
 #select__item-6:hover ~ .controls .item-6,
 #select__item-7:hover ~ .controls .item-7,
 #select__item-8:hover ~ .controls .item-8 {
-  background: none;
-  background-repeat: no-repeat;
-  background-image: url('../images/icons/home.svg');
-  border-radius: 1px;
-  width: 12px;
-  height: 12.5px;
+  cursor: pointer;
 }
