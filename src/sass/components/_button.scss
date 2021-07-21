@@ -1,29 +1,50 @@
-.button {
-  position: relative;
+%button {
+  // position: relative;
   display: flex;
   align-items: center;
-  border-radius: 22px;
-  padding-left: 37px;
-  padding-right: 37px;
-  height: 44px;
-  border-style: none;
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  border: none;
   color: $autofocus-btn;
   transition: background-color 250ms $transition-cubic;
+}
 
-  &--without-arrow {
+.button-text {
+  @extend %button;
+  border-radius: 22px;
+  min-width: 160px;
+
+  &__without-arrow {
     height: 24px;
-    font-weight: 400;
+    // font-weight: 400;
     font-size: 8px;
     line-height: 1.3;
+    min-width: 60px;
+    padding-left: 14px;
+    padding-right: 14px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       height: 40px;
       font-size: 14px;
+      line-height: 1.286;
+      min-width: 100px;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+
+  &__with-arrow {
+    height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3125;
+    padding-left: 37px;
+    padding-right: 37px;
+
+    &--mob-about {
+      font-size: 14px;
+      line-height: 1.286;
     }
   }
 
@@ -33,6 +54,31 @@
     right: 15%;
     transform: translateY(-50%);
     stroke: var(--color2, currentColor);
+  }
+
+  &--header {
+    @media screen and (max-width: 1279px) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--mob-menu {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--size {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
   }
 
   &--gray {
@@ -53,30 +99,56 @@
   &--red:hover {
     background-color: $focus-btn;
   }
+}
 
-  &--round {
-    padding: 15px;
-    border: none;
-    align-self: center;
-    margin-top: 30px;
-    border-radius: 50%;
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 0.06em;
-    color: $autofocus-btn;
-    background-color: $infocus-btn;
-    transition: background-color 250ms $transition-cubic;
+.button__round {
+  @extend %button;
+  align-self: center;
+  border-radius: 50%;
+  padding: 5px;
+  color: $autofocus-btn;
+  background-color: $infocus-btn;
+  transition: background-color 250ms $transition-cubic;
 
-    &:focus,
-    &:hover {
-      background-color: $focus-second-btn;
+  &--hero {
+    height: 18px;
+    width: 18px;
+    padding: 6px;
+
+    @media screen and (min-width: 1280px) {
+      height: 26px;
+      width: 26px;
+      padding: 9px;
     }
   }
 
-  &__round-right-arrow {
+  &--product {
+    width: 40px;
+    height: 40px;
+  }
+
+  &-right-arrow {
     fill: $autofocus-btn;
     display: block;
   }
+
+  &:focus,
+  &:hover {
+    background-color: $focus-second-btn;
+  }
+}
+
+.header-button__wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-button__title {
+  display: block;
+  padding-right: 12px;
+}
+
+.header-button__angle-bracket {
+  display: block;
+  stroke: $main-titles-txt;
 }

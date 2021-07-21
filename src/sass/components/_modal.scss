@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,8 +22,11 @@
 }
 
 .modal {
+  overflow-y: auto;
+  height: 100vh;
   position: absolute;
-  z-index: 111;
+  // position: relative;
+  // z-index: 30;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -35,12 +39,19 @@
 
 @media screen and (max-width:479px) {
   // width: 100%;
+
 }
 
 @media screen and (min-width:768px) {
+
+  width: 680px;
+  // height: 830px;
+  // height: 100vh;
+  padding: 25px 35px;
   width: 650px;
   // height: 750px;
   padding: 25px;
+
 }
 }
 
@@ -68,16 +79,28 @@
 .modal-maps__frame {
   display: flex;
   width:290px;
+
+  // height: 290px;
+  height: calc(100vh / 3);
   height: 220px;
+
   border: 1px solid $focus-btn;
 
   @media screen and (min-width:768px) {
   width:600px;
+
+  // height: 250px;
+
+  border: 1px solid $focus-btn;
+  border-radius: 5px;
+}
+}
   height: 220px;
   border: 1px solid $focus-btn;
   border-radius: 5px;
 }
 }
+
 
 .modal-maps__item:not(:last-child) {
   margin-bottom: 5px;

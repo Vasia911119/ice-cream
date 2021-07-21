@@ -125,7 +125,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      display: block;
+      // display: block;
       height: 525px;
       padding-top: 180px;
       padding-bottom: 50px;
@@ -195,11 +195,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
 
     @media screen and (min-width: 1280px) {
-      position: absolute;
-      bottom: 50px;
-      left: 144px;
+      margin-top: 60px;
     }
   }
 }
