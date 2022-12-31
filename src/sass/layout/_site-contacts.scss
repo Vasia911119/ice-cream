@@ -291,56 +291,6 @@
     margin-top: 86px;
   }
 
-  // &__btn--red,
-  // &__btn--white {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   background-color: #d41342;
-  //   color: $third-txt;
-  // font-size: 16px;
-  // font-weight: 700;
-  // line-height: 1.3;
-  // text-align: center;
-  // width: 161px;
-  // height: 44px;
-  // border: none;
-  // border-radius: 22px;
-  // cursor: pointer;
-  //   padding: 0;
-  //   letter-spacing: 0;
-  //   transition: background-color 250ms $transition-cubic;
-
-  //   @media screen and (min-width: 768px) {
-  //     width: 191px;
-  //   }
-
-  //   @media screen and (min-width: 1280px) {
-  //     width: 198px;
-  //   }
-  // }
-
-  // &__btn--red:hover,
-  // &__btn--red:focus {
-  //   background-color: $focus-btn;
-  // }
-
-  // &__btn--white {
-  //   background-color: $infocus-btn;
-  //   color: $autofocus-btn;
-  //   margin-top: 10px;
-
-  //   @media screen and (min-width: 768px) {
-  //     margin-top: 0;
-  //     margin-left: 15px;
-  //   }
-  // }
-
-  // &__btn--white:hover,
-  // &__btn--white:focus {
-  //   background-color: $focus-second-btn;
-  // }
-
   &__icon--white {
     stroke: $infocus-btn;
     margin-left: 8px;

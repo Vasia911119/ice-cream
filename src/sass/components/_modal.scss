@@ -7,8 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms $transition-cubic,
-  visibility 250ms $transition-cubic;
+  transition: opacity 250ms $transition-cubic, visibility 250ms $transition-cubic;
 }
 
 .is-hidden {
@@ -25,8 +24,6 @@
   overflow-y: auto;
   height: 100vh;
   position: absolute;
-  // position: relative;
-  // z-index: 30;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -34,25 +31,14 @@
   transition: transform 500ms $transition-cubic;
 
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
-    0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 
-@media screen and (max-width:479px) {
-  // width: 100%;
-
-}
-
-@media screen and (min-width:768px) {
-
-  width: 680px;
-  // height: 830px;
-  // height: 100vh;
-  padding: 25px 35px;
-  width: 650px;
-  // height: 750px;
-  padding: 25px;
-
-}
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    padding: 25px 35px;
+    width: 650px;
+    padding: 25px;
+  }
 }
 
 .button-close {
@@ -70,30 +56,26 @@
   align-items: center;
   cursor: pointer;
 
-&:hover,
-&:focus {
-  stroke: $focus-btn;
-  border: 1px solid $focus-btn;
-}
+  &:hover,
+  &:focus {
+    stroke: $focus-btn;
+    border: 1px solid $focus-btn;
+  }
 }
 .modal-maps__frame {
   display: flex;
-  width:290px;
-
-  // height: 290px;
+  width: 290px;
   height: calc(100vh / 3);
   height: 220px;
 
   border: 1px solid $focus-btn;
 
-  @media screen and (min-width:768px) {
-  width:600px;
+  @media screen and (min-width: 768px) {
+    width: 600px;
 
-  // height: 250px;
-
-  border: 1px solid $focus-btn;
-  border-radius: 5px;
-}
+    border: 1px solid $focus-btn;
+    border-radius: 5px;
+  }
 }
 
 .modal-maps__item:not(:last-child) {
